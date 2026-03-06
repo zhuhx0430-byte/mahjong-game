@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="screen-orientation" content="auto">
     <meta name="x5-orientation" content="auto">
     <title>广东红中变麻将 🀄</title>
@@ -406,43 +406,19 @@
         }
         
         /* ===== 横屏模式优化 ===== */
-        @media (orientation: landscape) and (max-height: 500px) {
+        @media (orientation: landscape) and (max-height: 600px) {
             /* 手机/平板横屏 */
             .mahjong-table {
-                grid-template-columns: 100px 1fr 100px;
-                grid-template-rows: 80px 1fr 120px;
-            }
-            
-            .player .avatar {
-                width: 35px; height: 35px;
-                font-size: 1.1em;
+                grid-template-rows: 70px 1fr 100px;
             }
             
             .tile {
-                width: 40px; height: 55px;
-                font-size: 1.6em;
+                width: 42px; height: 56px;
+                font-size: 1.7em;
             }
             
-            .action-bar {
-                gap: 5px;
-                bottom: 5px;
-            }
             .action-bar button {
                 padding: 8px 16px;
-                font-size: 0.9em;
-                min-width: 55px;
-            }
-            
-            .info-panel {
-                top: 50px;
-                right: 5px;
-                max-width: 130px;
-                font-size: 0.7em;
-                padding: 8px;
-            }
-            
-            .lai-zi-info {
-                padding: 5px 15px;
                 font-size: 0.9em;
             }
         }
